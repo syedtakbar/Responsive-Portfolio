@@ -1,0 +1,305 @@
+
+* {
+    box-sizing: border-box;
+    /* text-align: center; */
+    
+  }
+  
+
+  body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+    color: #777777;    
+    height: 100%;
+    background-color:lightblue;
+    /* background: url(""); */
+    background: #4aaaa5 url("../img/background.jpg") no-repeat fixed center; 
+
+    /* padding-top: 100px;
+    padding-bottom: 40px; */
+    
+    /* border: 1px solid red; */
+  }
+
+  input[type=text],
+  textarea {
+    display: block;
+    overflow: hidden;
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 20px;
+    resize: vertical;
+
+  }
+
+  input[type=submit] {
+    background-color:#4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color:#4aaaa5;
+    cursor: pointer;
+  }
+
+  .container {
+    /* clear: both;
+    float: left;     */
+    border-radius: 8px;
+    border: 1px solid #dddddd;    
+    background-color: #ffffff;
+    padding:20px;
+    /* margin: 30px;     */
+    width: 960px;
+   
+    /* overflow: auto; 
+    height: auto;     */
+    margin: 0 auto; /* Center the DIV horizontally */
+    /* position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);  */
+    opacity: 0.8;
+    transition: all 1.5s ease-in-out;
+
+  }
+
+
+  .current {
+    background-color: #ddd;
+    font-weight: bold;
+    color:black;
+  }
+
+ 
+
+  .contactcontainer {
+    
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid #dddddd;  
+  } 
+
+  .titlename {
+    top:0;
+    height: 5px;    
+    padding: 30px 20px 20px 30px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+  }
+
+  .topnav {
+    position: sticky;
+    background-color:#ffffff;
+    height: 50px;    
+    border: 1px solid #cccccc;    
+    top: 0;
+    left:0;
+    width: 100%;    
+    opacity: 0.7;
+    /* border: 2px solid red; */
+    z-index: 10000;
+    border-radius: 8px;
+  
+  }
+
+  .navList {
+    float:right;
+  }
+ 
+  .navList a {  
+    display: inline-block;
+    color:darkgray;
+    text-align: center; 
+    text-decoration: none;
+    padding: 8px 8px;
+    height: auto;
+    font-size: 10px;
+    margin:10px;
+    border-radius: 4px;    
+    border-right: 1px solid lightgray;
+    
+  }
+
+  .topnav a.active {    
+    color:black;
+    background-color: #4aaaa5;
+  }
+
+  .navList a:last-of-type {
+    border-right: none;
+  }
+
+   .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+   } 
+   
+   .maintitlename {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width:200px;
+    left:14.4%;
+    background-color:#4aaaa5;
+    color: white;
+    margin: 0px 0px 20px 30px;
+    padding: 10px;
+    font-size: 20px;        
+    border-radius: 5px;
+    text-align: center;
+  } 
+
+  .footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 5px solid #4aaaa5;
+    height: 50px;
+    margin-top: 100px; 
+    border-radius: 8px;
+  }
+
+  .bodytitle {
+    clear: both;
+    float: left;
+    color:#4aaaa5;
+    margin: 40px 0px 20px 0px;
+    font-size: 25px;
+    font-weight:bold ;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+  }
+  
+  hr {
+    clear: both;
+    border: none;
+    border-top: 3px solid lightgray;
+    
+  }
+
+  .image {
+    clear: both;
+    float:left;
+    /* border: 1px solid blue; */
+    width: 210px;
+    height: 250px; 
+    padding: 20px 20px 20px 5px;
+    border-radius: 5px;
+  }
+
+  .portimage_col {  
+    float:left;
+    /* border: 1px solid blue; */
+    position: relative;
+    width: calc(100/3);
+    height: calc(100/2); 
+    padding: 10px; 
+  }
+  
+  /* Clearfix (clear floats) */
+  .portimage_row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .portimage_cap {
+    position: absolute;
+    top: 150px;
+    background-color:#4aaaa5;
+    color: white;    
+    text-align: center;
+    height: 50px;
+    font-size: 25px;    
+    padding: 10px;
+    margin:10px;
+    border-radius: 5px;
+   
+  }
+
+  img{
+    border-radius: 5px;
+  }
+
+  .bio {      
+    position: relative;
+    /* margin: 5px; */
+    right:  -15px;    
+    /* border: 2px solid green;  */
+
+  } 
+
+
+ 
+@media screen and (min-width: 200px) and (max-width: 480px ) {
+   
+    .container {
+      /* clear: both;
+      float: left;     */
+      /* border-radius: 8px;
+      border: 1px solid #dddddd;    
+      background-color: #ffffff;
+      padding:20px; */
+      /* margin: 30px;     */
+      width: 300px;
+     
+      /* overflow: auto; 
+      height: auto;     */
+      margin: 0 auto; /* Center the DIV horizontally */
+      /* position: absolute;
+      top: 60%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);  */
+      opacity: 0.8;
+      transition: all 1.5s ease-in-out;
+  
+    }
+  }
+
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+   
+    .container {
+      /* clear: both;
+      float: left;     */
+      /* border-radius: 8px;
+      border: 1px solid #dddddd;    
+      background-color: #ffffff;
+      padding:20px; */
+      /* margin: 30px;     */
+      width: 500px;
+     
+      /* overflow: auto; 
+      height: auto;     */
+      margin: 0 auto; /* Center the DIV horizontally */
+      /* position: absolute;
+      top: 60%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);  */
+      opacity: 0.8;
+      transition: all 1.5s ease-in-out;
+  
+    }
+  }
+
+
+
+
